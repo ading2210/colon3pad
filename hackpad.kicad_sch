@@ -2494,6 +2494,16 @@
 		)
 		(uuid "012bde42-4acb-4a07-b20c-ad5b96bf2e9a")
 	)
+	(label "SCL"
+		(at 254 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "09cdc4c1-62a5-4191-84bf-d2cdd97cfcb3")
+	)
 	(label "COL1"
 		(at 208.28 25.4 0)
 		(effects
@@ -2563,6 +2573,16 @@
 			(justify left bottom)
 		)
 		(uuid "45d7587c-a34e-405f-9dae-c57f1c714583")
+	)
+	(label "SDA"
+		(at 254 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "484fd631-4bc1-4da9-b6c0-7929ac0c9867")
 	)
 	(label "SCL"
 		(at 58.42 50.8 0)
@@ -2634,16 +2654,6 @@
 		)
 		(uuid "904a6372-f4c3-492c-b6dc-3fac53794899")
 	)
-	(label "SDA"
-		(at 254 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9b5128bf-27c5-4403-8d75-74e976b1becf")
-	)
 	(label "COL2"
 		(at 226.06 25.4 0)
 		(effects
@@ -2683,16 +2693,6 @@
 			(justify left bottom)
 		)
 		(uuid "aec5f08f-8a1f-48ce-a3f0-d9ea96f40582")
-	)
-	(label "SCL"
-		(at 254 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c37c1d73-5111-4eb9-985f-252eb02275b2")
 	)
 	(label "ROW3"
 		(at 102.87 50.8 0)
@@ -2947,7 +2947,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 149.86 41.91 0)
 			(effects
 				(font
@@ -3176,7 +3176,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 213.36 83.82 0)
 			(effects
 				(font
@@ -3332,7 +3332,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 213.36 30.48 0)
 			(effects
 				(font
@@ -3488,7 +3488,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 213.36 48.26 0)
 			(effects
 				(font
@@ -3621,7 +3621,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Module:MOUDLE14P-XIAO-DIP-SMD"
+		(property "Footprint" "OPL:XIAO-RP2040-DIP"
 			(at 83.058 58.928 0)
 			(effects
 				(font
@@ -3789,7 +3789,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 165.1 87.63 0)
 			(effects
 				(font
@@ -3864,7 +3864,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 133.35 41.91 0)
 			(effects
 				(font
@@ -3939,7 +3939,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 133.35 110.49 0)
 			(effects
 				(font
@@ -4078,6 +4078,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 254 116.84 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c900c1d-e4c1-42e5-82cb-1e0ae03ec26d")
+		(property "Reference" "#PWR04"
+			(at 257.81 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 250.19 116.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 254 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a0a8f152-c69e-47eb-bcb3-e6f3f33cf8a8")
+		)
+		(instances
+			(project "hackpad"
+				(path "/8821c14e-317c-4d4c-bb83-933cf7089b21"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 266.7 35.56 0)
 		(unit 1)
@@ -4103,7 +4170,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 266.7 30.48 0)
 			(effects
 				(font
@@ -4170,7 +4237,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 165.1 41.91 0)
 			(effects
 				(font
@@ -4310,7 +4377,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 149.86 110.49 0)
 			(effects
 				(font
@@ -4385,7 +4452,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 133.35 87.63 0)
 			(effects
 				(font
@@ -4614,7 +4681,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 231.14 83.82 0)
 			(effects
 				(font
@@ -4770,7 +4837,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 248.92 48.26 0)
 			(effects
 				(font
@@ -4967,7 +5034,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 133.35 64.77 0)
 			(effects
 				(font
@@ -5042,7 +5109,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 181.61 110.49 0)
 			(effects
 				(font
@@ -5250,7 +5317,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 231.14 30.48 0)
 			(effects
 				(font
@@ -5446,73 +5513,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 254 111.76 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ecf5d31-5bc8-4fdf-81a1-8e093289341b")
-		(property "Reference" "#PWR03"
-			(at 247.65 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 250.19 111.7599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 254 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "62b5d223-aeaa-47ea-a004-599cc6be0242")
-		)
-		(instances
-			(project "hackpad"
-				(path "/8821c14e-317c-4d4c-bb83-933cf7089b21"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 266.7 71.12 0)
 		(unit 1)
@@ -5538,7 +5538,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 266.7 66.04 0)
 			(effects
 				(font
@@ -5606,7 +5606,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 231.14 48.26 0)
 			(effects
 				(font
@@ -5673,7 +5673,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 181.61 87.63 0)
 			(effects
 				(font
@@ -5966,7 +5966,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 181.61 64.77 0)
 			(effects
 				(font
@@ -6041,7 +6041,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 181.61 41.91 0)
 			(effects
 				(font
@@ -6184,7 +6184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "KiCad-SSD1306-0.91-OLED-4pin-128x32:SSD1306-0.91-OLED-4pin-128x32"
 			(at 264.16 114.3 0)
 			(effects
 				(font
@@ -6258,7 +6258,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 213.36 66.04 0)
 			(effects
 				(font
@@ -6673,7 +6673,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 165.1 110.49 0)
 			(effects
 				(font
@@ -6902,7 +6902,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 231.14 66.04 0)
 			(effects
 				(font
@@ -7035,7 +7035,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 248.92 83.82 0)
 			(effects
 				(font
@@ -7078,6 +7078,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 254 119.38 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1221b9b-b80a-434c-9f65-9d09901d76d9")
+		(property "Reference" "#PWR03"
+			(at 247.65 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 119.3799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 254 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e308d9f-7377-4724-8b6b-65ef00509b17")
+		)
+		(instances
+			(project "hackpad"
+				(path "/8821c14e-317c-4d4c-bb83-933cf7089b21"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812MINI")
 		(at 163.83 57.15 0)
 		(unit 1)
@@ -7102,7 +7169,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 165.1 64.77 0)
 			(effects
 				(font
@@ -7178,7 +7245,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 248.92 66.04 0)
 			(effects
 				(font
@@ -7377,73 +7444,6 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 254 114.3 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c564b51f-3c17-48eb-bb0d-b6d3b0086fc6")
-		(property "Reference" "#PWR04"
-			(at 257.81 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 250.19 114.2999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 254 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "53d0b233-202d-4968-9041-0ae641496fe9")
-		)
-		(instances
-			(project "hackpad"
-				(path "/8821c14e-317c-4d4c-bb83-933cf7089b21"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
 		(at 148.59 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7597,7 +7597,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 149.86 87.63 0)
 			(effects
 				(font
@@ -7933,7 +7933,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 266.7 83.82 0)
 			(effects
 				(font
@@ -8001,7 +8001,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 248.92 30.48 0)
 			(effects
 				(font
@@ -8593,7 +8593,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Switch_Keyboard_Kailh:SW_Kailh_Choc_V2_1.00u"
 			(at 266.7 48.26 0)
 			(effects
 				(font
@@ -8660,7 +8660,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+		(property "Footprint" "Keebio-Parts:SK6812-MINI-E"
 			(at 149.86 64.77 0)
 			(effects
 				(font
