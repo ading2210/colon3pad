@@ -12,6 +12,12 @@ This is a custom designed macro pad, created for the the [Hackpad](https://hackp
 </p>
 <img src="./images/pcb_schematic.png"> 
 
+## Inspiration / Challenges:
+
+I designed this so I could get more practice with designing PCBs in KiCad. The fact that I'm [getting this hardware for free](https://hackpad.hackclub.com) also gave me an excuse to work on it. 
+
+A challenge that I had was that I had to redo parts of the design several times. For example, I had finished the PCB when I realized that all the switches needed to be rotated 180°, so that forced me to reroute everything. Also, information on the PCB footprints and dimensions needed for the Choc V2 switches is somewhat scarce, so a ton of research was required. 
+
 ## BOM:
 For PCB:
 - 1x Seeed Studio XIAO RP2040 

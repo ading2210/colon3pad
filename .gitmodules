@@ -10,3 +10,6 @@
 [submodule "KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty"]
 	path = PCB/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty
 	url = https://github.com/gorbachev/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty
+[submodule "PCB/mbk-footprints"]
+	path = PCB/mbk-footprints
+	url = https://github.com/FKcaps/mbk-footprints
