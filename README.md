@@ -2,6 +2,16 @@
 
 This is a custom designed macro pad, created for the the [Hackpad](https://hackpad.hackclub.com/) event. It has 16 keys and a built in OLED display.
 
+<p>
+  <img src="./images/pcb_front.png" width="49%"> 
+  <img src="./images/pcb_back.png" width="49%"> 
+</p>
+<p>
+  <img src="./images/pcb_design.png" width="49%"> 
+  <img src="./images/case.png" width="49%"> 
+</p>
+<img src="./images/pcb_schematic.png"> 
+
 ## BOM:
 For PCB:
 - 1x Seeed Studio XIAO RP2040 
