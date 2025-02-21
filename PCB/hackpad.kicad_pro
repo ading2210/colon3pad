@@ -52,7 +52,14 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|92500000|131000000|10a1c0dd-204d-4fce-b632-97752fe4986f|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|132670000|41446000|1fb39ed3-b66c-4a05-8be9-98d32fd5f2c9|1b16f568-4c36-43d4-bef9-aacf724d45d4",
+        "silk_edge_clearance|137125856|41250000|1fb39ed3-b66c-4a05-8be9-98d32fd5f2c9|b6a14fce-3131-4d95-956c-ba7c3ef8bef1",
+        "silk_edge_clearance|146124000|41250000|1fb39ed3-b66c-4a05-8be9-98d32fd5f2c9|8e82be90-152a-4c96-b1b4-ac47bd7d14e6",
+        "silk_over_copper|132730000|60382000|e5adb3a0-e912-4132-ac81-30ada163f2d0|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|150510000|58858000|b8492870-48d0-4206-9e9a-a8d15d84ada1|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -469,7 +476,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "hackpad_pcb.step",
