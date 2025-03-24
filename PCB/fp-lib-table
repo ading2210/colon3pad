@@ -1,7 +1,9 @@
 (fp_lib_table
   (version 7)
-  (lib (name "OPL")(type "KiCad")(uri "${KIPRJMOD}/OPL_Kicad_Library/Seeed Studio XIAO Series Library")(options "")(descr ""))
-  (lib (name "Switch_Keyboard_Kailh")(type "KiCad")(uri "${KIPRJMOD}/kiswitch/library/footprints/Switch_Keyboard_Kailh.pretty")(options "")(descr ""))
-  (lib (name "Keebio-Parts")(type "KiCad")(uri "${KIPRJMOD}/Keebio-Parts.pretty")(options "")(descr ""))
-  (lib (name "KiCad-SSD1306-0.91-OLED-4pin-128x32")(type "KiCad")(uri "${KIPRJMOD}/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty")(options "")(descr ""))
+  (lib (name "OPL")(type "KiCad")(uri "${KIPRJMOD}/third_party/OPL_Kicad_Library/Seeed Studio XIAO Series Library")(options "")(descr ""))
+  (lib (name "Switch_Keyboard_Kailh")(type "KiCad")(uri "${KIPRJMOD}/third_party/kiswitch/library/footprints/Switch_Keyboard_Kailh.pretty")(options "")(descr ""))
+  (lib (name "Keebio-Parts")(type "KiCad")(uri "${KIPRJMOD}/third_party/Keebio-Parts.pretty")(options "")(descr ""))
+  (lib (name "KiCad-SSD1306-0.91-OLED-4pin-128x32")(type "KiCad")(uri "${KIPRJMOD}/third_party/KiCad-SSD1306-0.91-OLED-4pin-128x32.pretty")(options "")(descr ""))
+  (lib (name "mbk-footprints")(type "KiCad")(uri "${KIPRJMOD}/third_party/mbk-footprints/mbk.pretty")(options "")(descr ""))
+  (lib (name "library_edited")(type "KiCad")(uri "${KIPRJMOD}/third_party/library_edited.pretty")(options "")(descr ""))
 )

@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "8821c14e-317c-4d4c-bb83-933cf7089b21")
 	(paper "A4")
 	(title_block
@@ -11,7 +11,9 @@
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -78,19 +80,19 @@
 			)
 			(symbol "Conn_01x04_1_1"
 				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -111,8 +113,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -122,14 +124,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -6.35)
+					(start -1.27 -4.953)
+					(end 0 -5.207)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -205,10 +207,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Diode:1N4148"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -306,10 +313,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -318,10 +325,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -367,6 +374,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "LED:SK6812MINI"
 			(pin_names
@@ -453,18 +461,6 @@
 			(symbol "SK6812MINI_0_1"
 				(polyline
 					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 1.27 -2.54) (xy 1.778 -2.54)
 					)
 					(stroke
@@ -477,19 +473,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
 					)
 					(stroke
 						(width 0)
@@ -502,6 +486,18 @@
 				(polyline
 					(pts
 						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
 					)
 					(stroke
 						(width 0)
@@ -535,6 +531,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start 5.08 5.08)
 					(end -5.08 -5.08)
@@ -548,42 +556,6 @@
 				)
 			)
 			(symbol "SK6812MINI_1_1"
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "DOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -620,7 +592,44 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "OPL:XIAO-RP2040-DIP"
 			(exclude_from_sim no)
@@ -672,115 +681,7 @@
 			(symbol "XIAO-RP2040-DIP_1_0"
 				(polyline
 					(pts
-						(xy -1.27 -30.48) (xy -1.27 -16.51)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -27.94) (xy -2.54 -27.94)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -24.13) (xy -2.54 -24.13)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -20.32) (xy -2.54 -20.32)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -16.51) (xy -2.54 -16.51)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -16.51) (xy -1.27 -12.7)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -12.7) (xy -2.54 -12.7)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -12.7) (xy -1.27 -8.89)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -8.89) (xy -2.54 -8.89)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -8.89) (xy -1.27 -5.08)
+						(xy -1.27 -2.54) (xy 29.21 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -816,7 +717,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy 29.21 -2.54)
+						(xy -1.27 -8.89) (xy -2.54 -8.89)
 					)
 					(stroke
 						(width 0.1524)
@@ -828,7 +729,7 @@
 				)
 				(polyline
 					(pts
-						(xy 29.21 -30.48) (xy -1.27 -30.48)
+						(xy -1.27 -8.89) (xy -1.27 -5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -840,7 +741,7 @@
 				)
 				(polyline
 					(pts
-						(xy 29.21 -12.7) (xy 29.21 -30.48)
+						(xy -1.27 -12.7) (xy -2.54 -12.7)
 					)
 					(stroke
 						(width 0.1524)
@@ -852,7 +753,7 @@
 				)
 				(polyline
 					(pts
-						(xy 29.21 -8.89) (xy 29.21 -12.7)
+						(xy -1.27 -12.7) (xy -1.27 -8.89)
 					)
 					(stroke
 						(width 0.1524)
@@ -864,7 +765,67 @@
 				)
 				(polyline
 					(pts
-						(xy 29.21 -5.08) (xy 29.21 -8.89)
+						(xy -1.27 -16.51) (xy -2.54 -16.51)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -16.51) (xy -1.27 -12.7)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -20.32) (xy -2.54 -20.32)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -24.13) (xy -2.54 -24.13)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -27.94) (xy -2.54 -27.94)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -30.48) (xy -1.27 -16.51)
 					)
 					(stroke
 						(width 0.1524)
@@ -888,7 +849,7 @@
 				)
 				(polyline
 					(pts
-						(xy 30.48 -27.94) (xy 29.21 -27.94)
+						(xy 29.21 -5.08) (xy 29.21 -8.89)
 					)
 					(stroke
 						(width 0.1524)
@@ -900,7 +861,7 @@
 				)
 				(polyline
 					(pts
-						(xy 30.48 -24.13) (xy 29.21 -24.13)
+						(xy 29.21 -8.89) (xy 29.21 -12.7)
 					)
 					(stroke
 						(width 0.1524)
@@ -912,7 +873,7 @@
 				)
 				(polyline
 					(pts
-						(xy 30.48 -20.32) (xy 29.21 -20.32)
+						(xy 29.21 -12.7) (xy 29.21 -30.48)
 					)
 					(stroke
 						(width 0.1524)
@@ -924,7 +885,7 @@
 				)
 				(polyline
 					(pts
-						(xy 30.48 -16.51) (xy 29.21 -16.51)
+						(xy 29.21 -30.48) (xy -1.27 -30.48)
 					)
 					(stroke
 						(width 0.1524)
@@ -936,7 +897,7 @@
 				)
 				(polyline
 					(pts
-						(xy 30.48 -12.7) (xy 29.21 -12.7)
+						(xy 30.48 -5.08) (xy 29.21 -5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -960,7 +921,55 @@
 				)
 				(polyline
 					(pts
-						(xy 30.48 -5.08) (xy 29.21 -5.08)
+						(xy 30.48 -12.7) (xy 29.21 -12.7)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 30.48 -16.51) (xy 29.21 -16.51)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 30.48 -20.32) (xy 29.21 -20.32)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 30.48 -24.13) (xy 29.21 -24.13)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 30.48 -27.94) (xy 29.21 -27.94)
 					)
 					(stroke
 						(width 0.1524)
@@ -981,96 +990,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 31.75 -20.32 180)
-					(length 2.54)
-					(name "GPIO4/MISO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 31.75 -16.51 180)
-					(length 2.54)
-					(name "GPIO3/MOSI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 31.75 -12.7 180)
-					(length 2.54)
-					(name "3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 31.75 -8.89 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 31.75 -5.08 180)
-					(length 2.54)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1187,16 +1106,88 @@
 					)
 				)
 				(pin passive line
-					(at 31.75 -27.94 180)
+					(at 31.75 -5.08 180)
 					(length 2.54)
-					(name "GPIO1/RX"
+					(name "VBUS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -8.89 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -12.7 180)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -16.51 180)
+					(length 2.54)
+					(name "GPIO3/MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 31.75 -20.32 180)
+					(length 2.54)
+					(name "GPIO4/MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1222,12 +1213,35 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 31.75 -27.94 180)
+					(length 2.54)
+					(name "GPIO1/RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_Push"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1308,10 +1322,9 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -1320,9 +1333,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -1368,12 +1382,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1445,7 +1464,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1457,7 +1476,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1488,12 +1507,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1584,7 +1608,96 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 115.57 17.78)
+		(end 194.31 115.57)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 42a04622-080d-4a17-9520-026f5cde55f3)
+	)
+	(rectangle
+		(start 55.88 17.78)
+		(end 111.76 59.69)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 61fe3a90-167e-46de-964d-dd9bb41e18c8)
+	)
+	(rectangle
+		(start 243.84 104.14)
+		(end 280.67 123.19)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 747e9eb5-c683-4154-a689-8ab4b965b079)
+	)
+	(rectangle
+		(start 198.12 17.78)
+		(end 280.67 100.33)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8c675799-b34d-4867-a383-52fc2cec7dc2)
+	)
+	(text "OLED Display\n"
+		(exclude_from_sim no)
+		(at 270.002 106.68 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "37b5ed2e-0287-4408-a02b-354be757189f")
+	)
+	(text "Neopixel LEDs"
+		(exclude_from_sim no)
+		(at 182.118 20.574 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "4b0ffe6f-a61e-4323-92a0-2140da59e994")
+	)
+	(text "Key Matrix"
+		(exclude_from_sim no)
+		(at 271.526 20.32 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "7b198870-42c2-4a86-aa00-19dab68e1fc5")
+	)
+	(text "RP2040 MCU\n"
+		(exclude_from_sim no)
+		(at 100.584 20.574 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "be46395a-9714-41ac-b806-2c5d75b68e76")
 	)
 	(junction
 		(at 254 60.96)
@@ -2400,97 +2513,8 @@
 		)
 		(uuid "faa55982-853c-4b72-89b1-1fa5317ad588")
 	)
-	(rectangle
-		(start 115.57 17.78)
-		(end 194.31 115.57)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 42a04622-080d-4a17-9520-026f5cde55f3)
-	)
-	(rectangle
-		(start 55.88 17.78)
-		(end 111.76 59.69)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 61fe3a90-167e-46de-964d-dd9bb41e18c8)
-	)
-	(rectangle
-		(start 243.84 104.14)
-		(end 280.67 123.19)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 747e9eb5-c683-4154-a689-8ab4b965b079)
-	)
-	(rectangle
-		(start 198.12 17.78)
-		(end 280.67 100.33)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 8c675799-b34d-4867-a383-52fc2cec7dc2)
-	)
-	(text "OLED Display\n"
-		(exclude_from_sim no)
-		(at 270.002 106.68 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "37b5ed2e-0287-4408-a02b-354be757189f")
-	)
-	(text "Neopixel LEDs"
-		(exclude_from_sim no)
-		(at 182.118 20.574 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "4b0ffe6f-a61e-4323-92a0-2140da59e994")
-	)
-	(text "Key Matrix"
-		(exclude_from_sim no)
-		(at 271.526 20.32 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "7b198870-42c2-4a86-aa00-19dab68e1fc5")
-	)
-	(text "RP2040 MCU\n"
-		(exclude_from_sim no)
-		(at 100.584 20.574 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "be46395a-9714-41ac-b806-2c5d75b68e76")
-	)
 	(label "ROW1"
 		(at 102.87 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2501,7 +2525,6 @@
 	)
 	(label "SCL"
 		(at 254 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2512,7 +2535,6 @@
 	)
 	(label "COL1"
 		(at 208.28 25.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2523,7 +2545,6 @@
 	)
 	(label "COL4"
 		(at 261.62 25.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2534,7 +2555,6 @@
 	)
 	(label "ROW2"
 		(at 200.66 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2545,7 +2565,6 @@
 	)
 	(label "ROW4"
 		(at 102.87 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2556,7 +2575,6 @@
 	)
 	(label "DATA"
 		(at 118.11 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2567,7 +2585,6 @@
 	)
 	(label "ROW1"
 		(at 200.66 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2578,7 +2595,6 @@
 	)
 	(label "COL4"
 		(at 58.42 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2589,7 +2605,6 @@
 	)
 	(label "SDA"
 		(at 254 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2600,7 +2615,6 @@
 	)
 	(label "SCL"
 		(at 58.42 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2611,7 +2625,6 @@
 	)
 	(label "ROW4"
 		(at 200.66 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2622,7 +2635,6 @@
 	)
 	(label "COL3"
 		(at 58.42 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2633,7 +2645,6 @@
 	)
 	(label "DATA"
 		(at 58.42 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2644,7 +2655,6 @@
 	)
 	(label "ROW3"
 		(at 200.66 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2655,7 +2665,6 @@
 	)
 	(label "ROW2"
 		(at 102.87 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2666,7 +2675,6 @@
 	)
 	(label "COL1"
 		(at 58.42 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2677,7 +2685,6 @@
 	)
 	(label "COL2"
 		(at 226.06 25.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2688,7 +2695,6 @@
 	)
 	(label "COL2"
 		(at 58.42 35.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2699,7 +2705,6 @@
 	)
 	(label "SDA"
 		(at 58.42 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2710,7 +2715,6 @@
 	)
 	(label "COL3"
 		(at 243.84 25.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2721,7 +2725,6 @@
 	)
 	(label "ROW3"
 		(at 102.87 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3647,7 +3650,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OPL:XIAO-RP2040-DIP"
+		(property "Footprint" "Module:MOUDLE14P-XIAO-DIP-SMD"
 			(at 83.058 58.928 0)
 			(effects
 				(font
@@ -8959,4 +8962,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
